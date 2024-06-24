@@ -1,30 +1,31 @@
 :root {
     --swiper-theme-color: #0400ff;
 }
-#wrap {
-    display: flex;
-    margin: auto;
+.wrap {
+    
     min-height: 100vh;
+}
+.inner {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1280px;
 }
 
 #header {
-    justify-content: center;
-    height: 700px;
-
-        .box1 {
-            padding-left: 80px;
-            align-items: center;
-        }
+    
         .container {
             display: flex;
-            width: 1440px;
-            position: relative;
-            justify-content: space-between;
-            align-items: center;
             padding-top: 28px;
-            padding-left: 80px;
-            padding-right: 80px;
+            flex-direction: column;
+            .inner {
+                display: flex;
+                padding-bottom: 20px;
+                    .box1 {
+                        align-items: center;
+                    }
             #logo {
+                    display: flex;
+                    justify-content: center;
                     width: 270px;
                     height: 39px;
                 }
@@ -54,115 +55,137 @@
                             }
                         }
                 }
-                
+                   .category {
+                       display: flex;
+                       align-items: center;
+                       justify-content: center;
+                       padding-top: 39px;
+                   }
         }
-        .category {
-            display: flex;
-            position: absolute;
-            left: 80px;
-            padding-top: 39px;
-        }
-        .add {
-            display: flex;
-            position: absolute;
-            left: 80px;
-            padding-top: 100px;
-            border-radius: 20px;
-
-            .add-01 {
-                margin-right: 30px;
-            }
-
-            .add-02 {
-                margin: 0;
-            }
-        }
+        
+    }
 }
 
 //main--
 #main {
     flex: 1;
-    padding-top: 60px;
-    height: 1980px;
-    sec-type1 {
-        position: absolute;
+    padding-top: 20px;    
+}
+
+
+    .inner {display: flex;
+        justify-content: space-between;
     }
-    .contents-tit {
-        img {
-            position: absolute;
-            padding-top: 5px;
-        }
+    .add-01 {
+        margin-right: 30px;
+    }
+
+    .add-02 {
+        margin: 0;
+    }
+
+.sec-type1 {
+    padding: 50px 0;
+}
+.contents-tit {
+    img {
+        padding-top: 5px;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    font-size: 24px;
+
+    .sec-title .inner b {
         display: flex;
-        align-items: center;
-        justify-items: center;
-        font-size: 24px;
-        .sec-title {
-            display: flex;
-            padding-left: 80px;
-        }
-    }
-    .sec-title2 {
-        padding-left: 620px;
-        
-    }
-    .contents-img {
-        display: flex;
-        position: absolute;
-        padding-top: 17px;
-        padding-left: 80px;
-        img {
-            margin-right: 36px;
-        }
+        justify-content: center;
     }
 }
+
+.sec-title2 {
+    display: flex;
+    justify-content: center;
+    padding-right: 90px;
+
+}
+
+.contents-img .inner {
+    display: flex;
+    justify-content: center;
+    img {
+        margin: 20px;
+    }
+}
+
+
+
 .btn-img {
     display: flex;
-    width: 1440px;
     padding-left: 80px;
-    padding-top: 408px;
+    padding-top: 40px;
     align-items: center;
     justify-content: center;
 }
 .sec-type2 {
     display: flex;
-    width: 1440px;
-    padding-top: 60px;
     justify-content: center;
 }
 .sec-type3 {
-    .contents-tit2 {
+    padding-bottom: 30px;
+    .contents-tit2 .inner {
         display: flex;
         align-items: center;
         justify-items: center;
         font-size: 26px;
         padding-top: 80px;
+        padding-right: 130px;
             img {
-                position: absolute;
                 padding-top: 3px;
             }
             .sec-title {
                 display: flex;
-                padding-left: 80px;
             }
             .brand-tit {
-                padding-left: 700px;
+                display: flex;
+                justify-content: center;
             }
         
         }
             .contents-img2 {
-                position: absolute;
-                padding-top: 17px;
-                padding-left: 80px;
+                .inner {
+                    display: flex;
+                    justify-content: space-between;
+                }
+                img {
+                    padding-top: 20px;
+                }
+                }
             }
                 
-}
 .service-page {
     display: flex;
     align-items: center;
-    padding-top: 60px;
 }
 .company-page {
     display: flex;
-    position: absolute;
-    padding-top: 1120px;
+}
+
+.sec-type4 {
+    height: 850px;
+    background: #2C2B28;
+    img{
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    background: #191919;
+    img {
+        display: block;
+        margin: auto;
+    }
 }

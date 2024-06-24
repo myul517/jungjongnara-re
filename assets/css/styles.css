@@ -33,11 +33,6 @@ button,
   box-sizing: border-box;
 }
 
-fieldset,
-img {
-  border: 0 none;
-}
-
 dl,
 ul,
 ol,
@@ -263,163 +258,183 @@ legend {
   --swiper-theme-color: #0400ff;
 }
 
-#wrap {
-  display: flex;
-  margin: auto;
+.wrap {
   min-height: 100vh;
 }
 
-#header {
-  justify-content: center;
-  height: 700px;
+.inner {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1280px;
 }
-#header .box1 {
-  padding-left: 80px;
-  align-items: center;
-}
+
 #header .container {
   display: flex;
-  width: 1440px;
-  position: relative;
-  justify-content: space-between;
-  align-items: center;
   padding-top: 28px;
-  padding-left: 80px;
-  padding-right: 80px;
+  flex-direction: column;
 }
-#header .container #logo {
+#header .container .inner {
+  display: flex;
+  padding-bottom: 20px;
+}
+#header .container .inner .box1 {
+  align-items: center;
+}
+#header .container .inner #logo {
+  display: flex;
+  justify-content: center;
   width: 270px;
   height: 39px;
 }
-#header .container .search-box {
+#header .container .inner .search-box {
   padding-left: 100px;
 }
-#header .container .lang {
+#header .container .inner .lang {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#header .container .lang ul {
+#header .container .inner .lang ul {
   display: flex;
   gap: 24px;
 }
-#header .container .lang i {
+#header .container .inner .lang i {
   font-size: 20px;
   padding-right: 8px;
   line-height: 1.3;
 }
-#header .container .lang .search-area {
+#header .container .inner .lang .search-area {
   display: flex;
 }
-#header .container .lang .search-area .btn-search {
+#header .container .inner .lang .search-area .btn-search {
   display: flex;
   align-items: center;
   height: 100px;
   padding: 0 10px;
 }
-#header .category {
+#header .container .inner .category {
   display: flex;
-  position: absolute;
-  left: 80px;
+  align-items: center;
+  justify-content: center;
   padding-top: 39px;
-}
-#header .add {
-  display: flex;
-  position: absolute;
-  left: 80px;
-  padding-top: 100px;
-  border-radius: 20px;
-}
-#header .add .add-01 {
-  margin-right: 30px;
-}
-#header .add .add-02 {
-  margin: 0;
 }
 
 #main {
   flex: 1;
-  padding-top: 60px;
-  height: 1980px;
+  padding-top: 20px;
 }
-#main sec-type1 {
-  position: absolute;
+
+.inner {
+  display: flex;
+  justify-content: space-between;
 }
-#main .contents-tit {
+
+.add-01 {
+  margin-right: 30px;
+}
+
+.add-02 {
+  margin: 0;
+}
+
+.sec-type1 {
+  padding: 50px 0;
+}
+
+.contents-tit {
   display: flex;
   align-items: center;
   justify-items: center;
   font-size: 24px;
 }
-#main .contents-tit img {
-  position: absolute;
+.contents-tit img {
   padding-top: 5px;
 }
-#main .contents-tit .sec-title {
+.contents-tit .sec-title .inner b {
   display: flex;
-  padding-left: 80px;
+  justify-content: center;
 }
-#main .sec-title2 {
-  padding-left: 620px;
-}
-#main .contents-img {
+
+.sec-title2 {
   display: flex;
-  position: absolute;
-  padding-top: 17px;
-  padding-left: 80px;
+  justify-content: center;
+  padding-right: 90px;
 }
-#main .contents-img img {
-  margin-right: 36px;
+
+.contents-img .inner {
+  display: flex;
+  justify-content: center;
+}
+.contents-img .inner img {
+  margin: 20px;
 }
 
 .btn-img {
   display: flex;
-  width: 1440px;
   padding-left: 80px;
-  padding-top: 408px;
+  padding-top: 40px;
   align-items: center;
   justify-content: center;
 }
 
 .sec-type2 {
   display: flex;
-  width: 1440px;
-  padding-top: 60px;
   justify-content: center;
 }
 
-.sec-type3 .contents-tit2 {
+.sec-type3 {
+  padding-bottom: 30px;
+}
+.sec-type3 .contents-tit2 .inner {
   display: flex;
   align-items: center;
   justify-items: center;
   font-size: 26px;
   padding-top: 80px;
+  padding-right: 130px;
 }
-.sec-type3 .contents-tit2 img {
-  position: absolute;
+.sec-type3 .contents-tit2 .inner img {
   padding-top: 3px;
 }
-.sec-type3 .contents-tit2 .sec-title {
+.sec-type3 .contents-tit2 .inner .sec-title {
   display: flex;
-  padding-left: 80px;
 }
-.sec-type3 .contents-tit2 .brand-tit {
-  padding-left: 700px;
+.sec-type3 .contents-tit2 .inner .brand-tit {
+  display: flex;
+  justify-content: center;
 }
-.sec-type3 .contents-img2 {
-  position: absolute;
-  padding-top: 17px;
-  padding-left: 80px;
+.sec-type3 .contents-img2 .inner {
+  display: flex;
+  justify-content: space-between;
+}
+.sec-type3 .contents-img2 img {
+  padding-top: 20px;
 }
 
 .service-page {
   display: flex;
   align-items: center;
-  padding-top: 60px;
 }
 
 .company-page {
   display: flex;
-  position: absolute;
-  padding-top: 1120px;
+}
+
+.sec-type4 {
+  height: 850px;
+  background: #2C2B28;
+}
+.sec-type4 img {
+  display: block;
+  margin: 0 auto;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  background: #191919;
+}
+#footer img {
+  display: block;
+  margin: auto;
 }/*# sourceMappingURL=styles.css.map */
